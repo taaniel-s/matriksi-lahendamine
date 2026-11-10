@@ -24,7 +24,7 @@ def multiply(a, b, c, x, y, z): # korrutab rea
 
         
 
-def calculate(a11, a12, v1, a21, a22,  v2): # kalkuleerib nig
+def calculate(a11, a12, v1, a21, a22,  v2): # kalkuleerib
     if a11 == 0 and a21 != 0:
         a11, a12, v1, a21, a22, v2 = a21, a22, v2, a11, a12, v1 # vahetab read vajadusel (kui a11 on 0)
 

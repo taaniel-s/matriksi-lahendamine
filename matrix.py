@@ -9,10 +9,9 @@ v2 = float(input("Vabaliige v2: ").replace(",", "."))
 
 
 def divide(a, b, c): # jagab rea
-
-    if a == 22:
-        print("lahend puudub")
-        return
+    for i in range(3):
+        if a == 0:
+            return None
     
     return a / a, b / a, c / a  
 
@@ -25,7 +24,7 @@ def multiply(a, b, c, x, y, z): # korrutab rea
 
         
 
-def calculate(a11, a12, v1, a21, a22,  v2): # kalkuleerib
+def calculate(a11, a12, v1, a21, a22,  v2): # kalkuleerib nig
     if a11 == 0 and a21 != 0:
         a11, a12, v1, a21, a22, v2 = a21, a22, v2, a11, a12, v1 # vahetab read vajadusel (kui a11 on 0)
 
@@ -38,8 +37,8 @@ def calculate(a11, a12, v1, a21, a22,  v2): # kalkuleerib
         print(f"[{a11}, {a12}, {v1}]")
         print(f"[{a21}, {a22}, {v2}]")
 
-        print(f"x1 = {v1}")
-        print(f"x2 = {v2}")
+        print(f"x = {v1}")
+        print(f"y = {v2}")
 
     else:
         print("Error: ei tea mis juhtus")

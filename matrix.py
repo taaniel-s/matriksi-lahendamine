@@ -11,7 +11,7 @@ v2 = float(input("Vabaliige v2: ").replace(",", "."))
 def divide(a, b, c): # jagab rea
     for i in range(3):
         if a == 0:
-            return None
+            print("ei saa 0 jagada")
     
     return a / a, b / a, c / a  
 
